@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: we
       MYSQL_DATABASE: we
     volumes:
-      - webdevelop:/var/lib/mysql
+      - webdev_we:/var/lib/mysql
 
   wordpress:
     depends_on:
@@ -31,5 +31,5 @@ services:
       WORDPRESS_DB_NAME: we
 
 volumes:
-  webdevelop:
+  webdev_we:
     external: true
