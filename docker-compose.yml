@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: we
+      MYSQL_PASSWORD: we
+      MYSQL_DATABASE: we
+    volumes:
+      - webdevelop:/var/lib/mysql
+
+  wordpress:
+    depends_on:
+      - mysql
+    build: ./
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - mysql:mysql
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/we
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: we
+      WORDPRESS_DB_PASSWORD: we
+      WORDPRESS_DB_NAME: we
+
+volumes:
+  webdevelop:
+    external: true
