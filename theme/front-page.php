@@ -9,6 +9,7 @@
  * @version 1.0
  */
 ?>
+
 <?php get_header(); ?>
 <div class="front-page-container">
 

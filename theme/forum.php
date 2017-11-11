@@ -7,3 +7,6 @@
  * @version 1.0
  */
 ?>
+
+<div id="app">
+</div>
