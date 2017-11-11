@@ -7,6 +7,17 @@
  * @package We
  * @since 1.0
  * @version 1.0
+ *
+ * Meta data tags:
+ *
+ * @page_title
+ * @page_subtitle
+ * @page_col1_title
+ * @page_col1_content
+ * @page_col2_title
+ * @page_col2_content
+ * @page_link_href
+ * @page_link_title
  */
 ?>
 
@@ -15,33 +26,28 @@
 
   <section class="main">
     <div class="center">
-      <h1>WE</h1>
-      <h2>A CUSTOMIZABLE FORUM</h2>
+      <h1><?php echo get_post_meta(get_the_ID(), "page_title", true); ?></h1>
+      <h2><?php echo get_post_meta(get_the_ID(), "page_subtitle", true); ?></h2>
     </div>
   </section>
 
   <section class="about">
     <div class="left">
-      <h3>COMPONENT BASED</h3>
-      <p>
-        We is built using Vue.js. You can re-structure the forum and even
-        redesign the components used. Everything communicates using the We
-        API.
-      </p>
+      <h3><?php echo get_post_meta(get_the_ID(), "page_col1_title", true); ?></h3>
+      <p><?php echo get_post_meta(get_the_ID(), "page_col1_content", true); ?></p>
     </div>
     <div class="right">
-      <h3>CONTENT MANAGEMENT SYSTEM</h3>
-      <p>
-        We uses wordpress for its backend. It provides an almost complete
-        framework for managing backend content.
-      </p>
+      <h3><?php echo get_post_meta(get_the_ID(), "page_col2_title", true); ?></h3>
+      <p><?php echo get_post_meta(get_the_ID(), "page_col2_content", true); ?></p>
     </div>
   </section>
 
   <section class="forum">
     <h3>TRY IT OUT</h3>
     <br/>
-    <a href="http://localhost:8080/?page_id=7">Explore We</a>
+    <a href="<?php echo get_post_meta(get_the_ID(), "page_link_href", true); ?>">
+      <?php echo get_post_meta(get_the_ID(), "page_link_title", true); ?>
+    </a>
   </section>
 
 </div>
