@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  mysql:
+  mysql_we:
     image: mysql:5.7
     restart: always
     environment:
@@ -13,19 +13,20 @@ services:
     volumes:
       - webdev_we:/var/lib/mysql
 
-  wordpress:
+  wordpress_we:
     depends_on:
-      - mysql
+      - mysql_we
     build: ./
+    image: wordpress_we
     restart: always
     ports:
       - 8080:80
     links:
-      - mysql:mysql
+      - mysql_we:mysql_we
     volumes:
       - ./theme:/var/www/html/wp-content/themes/we
     environment:
-      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_HOST: mysql_we:3306
       WORDPRESS_DB_USER: we
       WORDPRESS_DB_PASSWORD: we
       WORDPRESS_DB_NAME: we
