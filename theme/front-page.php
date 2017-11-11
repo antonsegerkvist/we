@@ -30,7 +30,7 @@
       </p>
     </div>
     <div class="right">
-      <h3>WORDPRESS</h3>
+      <h3>CONTENT MANAGEMENT SYSTEM</h3>
       <p>
         We uses wordpress for its backend. It provides an almost complete
         framework for managing backend content.
@@ -39,9 +39,9 @@
   </section>
 
   <section class="forum">
-  </section>
-
-  <section class="credits">
+    <h3>TRY IT OUT</h3>
+    <br/>
+    <a href="http://localhost:8080/?page_id=7">Explore We</a>
   </section>
 
 </div>

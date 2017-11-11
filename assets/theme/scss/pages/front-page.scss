@@ -8,8 +8,10 @@
   /* Front page header. */
   & > .main {
     background-color: #eee;
+    display: inline-block;
     height: 500px;
     position: relative;
+    width: 100%;
 
     & > .center {
       left: 50%;
@@ -40,6 +42,8 @@
   /* Front page about. */
   & > .about {
     background-color: #fff;
+    display: inline-block;
+    width: 100%;
 
     /* Global. */
     & > .left {
@@ -88,14 +92,14 @@
     @media (min-width: 800px) {
 
       & > .left {
-        display: inline-block;
+        display: block;
         float: left;
         padding: 20px 0;
         width: 50%;
       }
 
       & > .right {
-        display: inline-block;
+        display: block;
         float: left;
         padding: 20px 0;
         width: 50%;
@@ -114,6 +118,40 @@
       & > .right {
         padding: 20px 0;
         width: 100%;
+      }
+
+    }
+
+  }
+
+  /* Front page forum. */
+  & > .forum {
+    background-color: #000;
+    display: inline-block;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+
+    & > h3 {
+      color: #fff;
+      display: inline-block;
+      font-family: "ProximaNovaThin";
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    & > a {
+      background-color: #00b9e4;
+      border-radius: 3px;
+      color: #fff;
+      display: inline-block;
+      font-family: helvetica;
+      padding: 10px 50px;
+      text-decoration: none;
+      transition: background-color 267ms ease-in-out;
+
+      &:hover {
+        background-color: lighten(#00b9e4, 5%);
       }
 
     }
