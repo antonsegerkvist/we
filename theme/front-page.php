@@ -15,8 +15,8 @@
 
   <section class="main">
     <div class="center">
-      <h1>We</h1>
-      <h2>A Customizable Forum</h2>
+      <h1>WE</h1>
+      <h2>A CUSTOMIZABLE FORUM</h2>
     </div>
   </section>
 
