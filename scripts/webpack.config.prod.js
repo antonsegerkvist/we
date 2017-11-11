@@ -20,7 +20,7 @@ const webpackConfig = merge(baseWebpack, {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('assets/css/app.bundle.xxss'),
+    new ExtractTextPlugin('assets/css/app.bundle.css'),
     new webpack.optimize.UglifyJsPlugin()
   ]
 })
