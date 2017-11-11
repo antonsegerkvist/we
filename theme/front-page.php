@@ -1,15 +1,32 @@
+<?php
+/**
+ * The front page template file.
+ *
+ * Template Name: Home
+ *
+ * @package We
+ * @since 1.0
+ * @version 1.0
+ */
+?>
 <?php get_header(); ?>
+<div class="front-page-container">
 
-<section class="front-page-main">
-</section>
+  <section class="main">
+    <div class="center">
+      <h1>We</h1>
+      <h2>A Customizable Forum</h2>
+    </div>
+  </section>
 
-<section class="front-page-about">
-</section>
+  <section class="about">
+  </section>
 
-<section class="front-page-forum">
-</section>
+  <section class="forum">
+  </section>
 
-<section class="front-page-credits">
-</section>
+  <section class="credits">
+  </section>
 
+</div>
 <?php get_footer(); ?>
