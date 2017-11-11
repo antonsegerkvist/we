@@ -7,7 +7,8 @@
   "author": "Anton Segerkvist <anton.stefan.roine.segerkvist@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config=./scripts/webpack.config.prod.js"
+    "build": "webpack --config=./scripts/webpack.config.prod.js",
+    "serve": "yarn build && docker-compose up -d --build"
   },
   "devDependencies": {
     "caniuse-lite": "^1.0.30000760",
