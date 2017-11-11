@@ -1,9 +1,11 @@
+/* Front page container. */
 .front-page-container {
   margin: 0 auto;
   max-width: 900px;
   padding: 50px 0;
   width: 100%;
 
+  /* Front page header. */
   & > .main {
     background-color: #eee;
     height: 500px;
@@ -21,12 +23,91 @@
         font-family: "ProximaNovaThin";
         font-size: 42px;
         margin-bottom: 16px;
+        text-shadow: rgba(0,0,0,.01) 0 0 1px;
       }
 
       & > h2 {
         color: #555;
         font-family: "ProximaNovaThin";
         font-size: 24px;
+        text-shadow: rgba(0,0,0,.01) 0 0 1px;
+      }
+
+    }
+
+  }
+
+  /* Front page about. */
+  & > .about {
+    background-color: #fff;
+
+    /* Global. */
+    & > .left {
+      box-sizing: border-box;
+      text-align: center;
+
+      & > h3 {
+        font-family: "ProximaNovaThin";
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      & > p {
+        font-family: helvetica;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+    }
+
+    & > .right {
+      box-sizing: border-box;
+      text-align: center;
+
+      & > h3 {
+        font-family: "ProximaNovaThin";
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      & > p {
+        font-family: helvetica;
+        font-size: 14px;
+        margin-bottom: 10px
+      }
+
+    }
+
+    /* Desktop mode. */
+    @media (min-width: 800px) {
+
+      & > .left {
+        display: inline-block;
+        float: left;
+        padding: 20px 0;
+        width: 50%;
+      }
+
+      & > .right {
+        display: inline-block;
+        float: left;
+        padding: 20px 0;
+        width: 50%;
+      }
+
+    }
+
+    /* Mobile mode. */
+    @media (max-width: 799px) {
+
+      & > .left {
+        width: 100%;
+      }
+
+      & > .right {
+        width: 100%;
       }
 
     }

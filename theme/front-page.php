@@ -21,6 +21,21 @@
   </section>
 
   <section class="about">
+    <div class="left">
+      <h3>COMPONENT BASED</h3>
+      <p>
+        We is built using Vue.js. You can re-structure the forum and even
+        redesign the components used. Everything communicates using the We
+        API.
+      </p>
+    </div>
+    <div class="right">
+      <h3>CHECK IT OUT</h3>
+      <p>
+        You can try out the forum by following the link below.
+      </p>
+      <a href="javascript:void(0)">Go To Forum</a>
+    </div>
   </section>
 
   <section class="forum">
