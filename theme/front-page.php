@@ -30,11 +30,11 @@
       </p>
     </div>
     <div class="right">
-      <h3>CHECK IT OUT</h3>
+      <h3>WORDPRESS</h3>
       <p>
-        You can try out the forum by following the link below.
+        We uses wordpress for its backend. It provides an almost complete
+        framework for managing backend content.
       </p>
-      <a href="javascript:void(0)">Go To Forum</a>
     </div>
   </section>
 
