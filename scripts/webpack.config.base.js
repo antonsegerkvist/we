@@ -1,4 +1,5 @@
 const path = require('path')
+const nodeExternals = require('webpack-node-externals')
 
 const webpackConfig = {
   entry: {
@@ -10,6 +11,7 @@ const webpackConfig = {
     publicPath: '/'
   },
   target: 'web',
+  externals: [nodeExternals()],
   module: {
     rules: [
       {
