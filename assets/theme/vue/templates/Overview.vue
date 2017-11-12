@@ -1,13 +1,11 @@
 <template>
-  <div id="#app">
-    <we-template-overview/>
+  <div class="template-front">
+    <div class="header">
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-
-}
 </script>
 
 <style>
