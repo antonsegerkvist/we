@@ -3,3 +3,4 @@ node_modules
 
 theme/assets/css/app.bundle.css
 theme/assets/js/app.bundle.js
+theme/assets/js/vue.bundle.js
