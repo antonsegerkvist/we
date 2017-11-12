@@ -6,6 +6,7 @@
 
 import Vue from 'vue'
 import App from './components/App.vue'
+import store from './store'
 
 /**
  * Define application.
@@ -16,7 +17,8 @@ window.onload = () => {
     el: '#app',
     render: h => h(App),
     template: '<App/>',
-    components: { App }
+    components: { App },
+    store
   })
   return app
 }
