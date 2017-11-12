@@ -9,7 +9,22 @@ const webpackConfig = {
     path: path.resolve(__dirname, '../theme'),
     publicPath: '/'
   },
-  target: 'web'
+  target: 'web',
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {}
+        }
+      }
+    ]
+  }
 }
 
 module.exports = webpackConfig
