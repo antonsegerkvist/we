@@ -1,6 +1,7 @@
 <template>
   <div id="#app">
-    Hello
+    <we-login-box/>
+    <we-logout-box/>
   </div>
 </template>
 
