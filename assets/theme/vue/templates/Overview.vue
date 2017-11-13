@@ -11,8 +11,25 @@
 
     <!-- Body. -->
     <div class="body">
-      <div class="popular">
+
+      <!-- Left. -->
+      <div class="left">
+
+        <!-- Container. -->
+        <div class="container">
+        </div>
+
       </div>
+
+      <!-- Right. -->
+      <div class="right">
+
+        <!-- Container. -->
+        <div class="container">
+        </div>
+
+      </div>
+
     </div>
 
     <!-- Footer. -->
@@ -47,17 +64,67 @@
   & > .body {
     background-color: rgb(235, 235, 235);
     box-sizing: border-box;
-    height: 100px;
+    display: inline-block;
     padding: 25px 30px;
+    vertical-align: top;
     width: 100%;
 
     /* Left column. */
     & > .left {
+      box-sizing: border-box;
+      display: inline-block;
+
+      /* Container. */
+      & > .container {
+        padding: 10px;
+      }
 
     }
 
     /* Right column. */
     & > .right {
+      box-sizing: border-box;
+      display: inline-block;
+
+      /* Container. */
+      & > .container {
+        background-color: #fff;
+        padding: 10px;
+      }
+
+    }
+
+    /* Desktop mode. */
+    @media (min-width: 800px) {
+
+      /* Left column. */
+      & > .left {
+        float: left;
+        padding: 0 15px;
+        width: 30%;
+      }
+
+      /* Right column. */
+      & > .right {
+        float: left;
+        padding: 0 15px;
+        width: 70%;
+      }
+
+    }
+
+    /* Mobile mode. */
+    @media (max-width: 799px) {
+
+      /* Left column. */
+      & > .left {
+        width: 100%;
+      }
+
+      /* Right column. */
+      & > .right {
+        width: 100%;
+      }
 
     }
 
