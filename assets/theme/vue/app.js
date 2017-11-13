@@ -6,7 +6,7 @@
 
 import Vue from 'vue'
 
-import TemplateFront from './templates/Overview.vue'
+import OverviewTemplate from './templates/Overview.vue'
 import App from './components/App.vue'
 import LatestPosts from './components/LatestPosts.vue'
 import LoginBox from './components/LoginBox.vue'
@@ -18,10 +18,10 @@ import store from './store'
  * Define components.
  */
 
-Vue.component('we-template-overview', TemplateFront)
-Vue.component('we-login-box', LoginBox)
-Vue.component('we-logout-box', LogoutBox)
-Vue.component('we-latest-posts', LatestPosts)
+Vue.component('we-overview-template', OverviewTemplate)
+Vue.component('we-login-box-component', LoginBox)
+Vue.component('we-logout-box-component', LogoutBox)
+Vue.component('we-latest-posts-component', LatestPosts)
 
 /**
  * Define application.

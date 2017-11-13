@@ -1,6 +1,6 @@
 <template>
   <div id="#app">
-    <we-template-overview/>
+    <we-overview-template/>
   </div>
 </template>
 
