@@ -1,5 +1,5 @@
 <template>
-  <div class="we-latest-posts-box">
+  <div class="we-latest-posts-component">
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="we-login-box">
+  <div class="we-login-box-component">
   </div>
 </template>
 

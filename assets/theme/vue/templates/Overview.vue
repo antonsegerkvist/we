@@ -17,6 +17,7 @@
 
         <!-- Container. -->
         <div class="container">
+
         </div>
 
       </div>
@@ -26,6 +27,14 @@
 
         <!-- Container. -->
         <div class="container">
+
+          <!-- New discussion button. -->
+          <we-button-component
+            label="NEW DISCUSSION"/>
+
+          <!-- Category display. -->
+          <we-category-display-component/>
+
         </div>
 
       </div>
@@ -76,6 +85,7 @@
 
       /* Container. */
       & > .container {
+        background-color: #fff;
         padding: 10px;
       }
 
@@ -88,8 +98,7 @@
 
       /* Container. */
       & > .container {
-        background-color: #fff;
-        padding: 10px;
+        padding: 0;
       }
 
     }
@@ -101,14 +110,14 @@
       & > .left {
         float: left;
         padding: 0 15px;
-        width: 30%;
+        width: 70%;
       }
 
       /* Right column. */
       & > .right {
         float: left;
         padding: 0 15px;
-        width: 70%;
+        width: 30%;
       }
 
     }
