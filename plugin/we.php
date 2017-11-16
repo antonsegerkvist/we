@@ -3,13 +3,13 @@
  * @since 1.0.0
  * @package We
  *
- * Plugin Name:       We
- * Description:       Plugin for we customizable forum.
- * Version:           1.0.0
- * Author:            Anton Segerkvist
- * Author URI:        http://antonsegerkvist.net
- * License:           MIT
- * Text Domain:       We
+ * Plugin Name: We
+ * Description: Plugin for we customizable forum.
+ * Version:     1.0.0
+ * Author:      Anton Segerkvist
+ * Author URI:  http://antonsegerkvist.net
+ * License:     MIT
+ * Text Domain: We
  */
 
 defined ('ABSPATH') or die ('Direct access not allowed');
