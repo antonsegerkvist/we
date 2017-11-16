@@ -1,3 +1,6 @@
+![We front page image]
+(https://github.com/antonsegerkvist/we/blob/master/assets/github/main.png)
+
 # We
 We is a forum built on top of the Wordpress content management system. It is
 built in components using __Vue.js__ and can easily be decomposed and composed
