@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss">
 .we-button-component {
-  background-color: green;
+  background-color: rgb(63, 168, 66);
   border-radius: 2px;
   cursor: pointer;
   height: 50px;
@@ -27,7 +27,7 @@ export default {
   width: 100%;
 
   &:hover {
-    background-color: lighten(green, 5%);
+    background-color: lighten(rgb(63, 168, 66), 5%);
   }
 
   & > p {

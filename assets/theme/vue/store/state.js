@@ -1,3 +1,11 @@
 'use strict'
 
-export default {}
+export default {
+
+  /**
+   * Categories.
+   */
+
+  categories: []
+
+}
