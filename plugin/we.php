@@ -25,7 +25,8 @@ define ('WE_VERSION', '1.0.0');
  */
 
 function activate_we () {
-
+  require_once plugin_dir_path(__FILE__) . 'setup/install.php';
+  We_Activator::activate();
 }
 
 /**
@@ -33,7 +34,8 @@ function activate_we () {
  */
 
 function deactivate_we () {
-
+  require_once plugin_dir_path(__FILE__) . 'setup/uninstall.php';
+  We_Deactivator::deactivate();
 }
 
 /**
@@ -44,11 +46,18 @@ register_activation_hook(__FILE__, 'activate_we');
 register_deactivation_hook(__FILE__, 'deactivate_we');
 
 /**
+ * Include plugin dependecies.
+ */
+
+require_once plugin_dir_path(__FILE__) . 'accessors/index.php';
+
+/**
  * Begins execution of the plugin.
  */
 
 function run_we () {
-
+  $accessor = new We_Accessor();
+  $accessor->run();
 }
 run_we();
 ?>
