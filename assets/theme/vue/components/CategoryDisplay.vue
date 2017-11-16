@@ -25,6 +25,7 @@ export default {
   width: 100%;
 
   & > h4 {
+    color: #444;
     font-family: "ProximaNovaRegular";
     font-size: 18px;
     margin-bottom: 10px;
@@ -39,8 +40,8 @@ export default {
 
       & > a {
         color: #444;
-        font-family: "ProximaNovaRegular";
-        font-size: 18px;
+        font-family: helvetica;
+        font-size: 16px;
         text-decoration: none;
       }
 

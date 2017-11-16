@@ -25,6 +25,7 @@
 <?php get_header(); ?>
 <div class="front-page-container">
 
+  <?php /* The top section of the page. */ ?>
   <section class="main">
     <div class="center">
       <h1><?php echo get_post_meta(get_the_ID(), "page_main_title", true); ?></h1>
@@ -32,6 +33,7 @@
     </div>
   </section>
 
+  <?php /* The about section of the page. */ ?>
   <section class="about">
     <div class="left">
       <h3><?php echo get_post_meta(get_the_ID(), "page_about_col1_title", true); ?></h3>
@@ -43,6 +45,7 @@
     </div>
   </section>
 
+  <?php /* The link to forum section of the page. */ ?>
   <section class="forum">
     <h3><?php echo get_post_meta(get_the_ID(), "page_forum_title", true); ?></h3>
     <br/>

@@ -25,6 +25,7 @@ services:
       - mysql_we:mysql_we
     volumes:
       - ./theme:/var/www/html/wp-content/themes/we
+      - ./plugin:/var/www/html/wp-content/plugins/we
     environment:
       WORDPRESS_DB_HOST: mysql_we:3306
       WORDPRESS_DB_USER: we
