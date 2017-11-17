@@ -25,7 +25,7 @@ define ('WE_VERSION', '1.0.0');
  */
 
 function activate_we () {
-  require_once plugin_dir_path(__FILE__) . 'setup/install.php';
+  require_once plugin_dir_path (__FILE__) . 'setup/install.php';
   We_Activator::activate();
 }
 

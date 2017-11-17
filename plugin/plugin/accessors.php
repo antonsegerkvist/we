@@ -11,7 +11,15 @@ class We_Accessors {
    * Initialization method.
    */
 
-  public static function run() {
+  public static function run () {
+    add_action();
+  }
+
+  /**
+   * User registration endpoint.
+   */
+
+  public static function endpoint_register_user () {
 
   }
 

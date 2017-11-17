@@ -11,7 +11,7 @@ class We_Taxonomies {
    * Register forum taxonomies.
    */
 
-  public static function register_forum_taxonomy() {
+  public static function register_forum_taxonomy () {
 
     $labels = [
       'name'              => _x('Forum Posts', 'taxonomy general name'),
@@ -44,7 +44,7 @@ class We_Taxonomies {
    * Initialization method.
    */
 
-  public static function run() {
+  public static function run () {
 
     /**
      * Add forum taxonomy registration to correct hook.
