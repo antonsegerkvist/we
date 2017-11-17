@@ -49,15 +49,16 @@ register_deactivation_hook(__FILE__, 'deactivate_we');
  * Include plugin dependecies.
  */
 
-require_once plugin_dir_path(__FILE__) . 'accessors/index.php';
+require_once plugin_dir_path(__FILE__) . 'plugin/taxonomies.php';
+require_once plugin_dir_path(__FILE__) . 'plugin/accessors.php';
 
 /**
  * Begins execution of the plugin.
  */
 
 function run_we () {
-  $accessor = new We_Accessor();
-  $accessor->run();
+  We_Taxonomies::run();
+  We_Accessors::run();
 }
 run_we();
 ?>

@@ -8,7 +8,7 @@ defined ('ABSPATH') or die ('Direct access not allowed');
 class We_Activator {
 
   public static function activate () {
-    
+
   }
 
 }
