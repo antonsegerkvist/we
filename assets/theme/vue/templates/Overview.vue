@@ -32,6 +32,9 @@
           <we-button-component
             label="NEW DISCUSSION"/>
 
+          <!-- Discussion display. -->
+          <we-discussion-display-component/>
+
           <!-- Category display. -->
           <we-category-display-component/>
 

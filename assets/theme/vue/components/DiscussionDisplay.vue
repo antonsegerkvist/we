@@ -1,15 +1,25 @@
 <template>
-  <div class="we-category-display-component">
-    <h4>Categories</h4>
+  <div class="we-discussion-display-component">
+    <h4>Discussions</h4>
     <ul>
       <li>
-        <a style="font-weight:bold" href="javascript:void(0)">
-          All Categories
+        <a href="javascript:void(0)">
+          Recent Discussions
         </a>
       </li>
-      <li v-for="category in categories">
+      <li>
         <a href="javascript:void(0)">
-          {{ category.name }}
+          My Bookmarks
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          Recent Discussions
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          My Drafts
         </a>
       </li>
     </ul>
@@ -23,21 +33,11 @@ import {
 } from 'vuex'
 
 export default {
-  methods: {
-    ...mapActions({
-      updateCategories: 'updateCategories'
-    })
-  },
-  computed: {
-    ...mapGetters({
-      categories: 'getCategories'
-    })
-  }
 }
 </script>
 
 <style lang="scss">
-.we-category-display-component {
+.we-discussion-display-component {
   box-sizing: border-box;
   margin-top: 20px;
   width: 100%;
