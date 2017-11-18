@@ -36,7 +36,7 @@ class We_Taxonomies {
       'rewrite'           => ['slug' => 'forum'],
     ];
 
-    register_taxonomy('forum', ['post'], $args);
+    register_taxonomy('we_forum', ['post'], $args);
 
   }
 
