@@ -2,7 +2,11 @@
   <div class="we-category-display-component">
     <h4>Categories</h4>
     <ul>
-      <li v-for="category in categories"><a href="javascript:void(0)">{{ category.name }}</a></li>
+      <li v-for="category in categories">
+        <a href="javascript:void(0)">
+          {{ category.name }}
+        </a>
+      </li>
     </ul>
   </div>
 </template>
@@ -14,9 +18,6 @@ import {
 } from 'vuex'
 
 export default {
-  created () {
-    this.updateCategories()
-  },
   methods: {
     ...mapActions({
       updateCategories: 'updateCategories'

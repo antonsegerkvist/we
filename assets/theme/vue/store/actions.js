@@ -17,13 +17,12 @@ export default {
    */
 
   updateCategories (context) {
-    console.log(api)
     api.category.getAllCategories()
     .then(response => {
-      console.log(response)
       context.commit('setCategories', response.data)
     })
     .catch(error => {
+      // FIXME: handle error.
       console.log(error)
     })
   },
@@ -32,12 +31,13 @@ export default {
    * Fetch and update all discussions in the state.
    */
 
-  updateDiscussion (context) {
+  updateDiscussions (context) {
     api.discussion.getAllDiscussions()
     .then(response => {
-      console.log(response)
+      context.commit('setDiscussions', response.data)
     })
     .catch(error => {
+      // FIXME: handle error.
       console.log(error)
     })
   }
