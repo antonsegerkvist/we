@@ -1,5 +1,9 @@
 'use strict'
 
+/**
+ * Define vuex getters.
+ */
+
 export default {
 
   /**
@@ -8,6 +12,14 @@ export default {
 
   getCategories (state) {
     return state.categories
+  },
+
+  /**
+   * Get all the discussions in the buffer.
+   */
+
+  getDiscussions (state) {
+    return state.discussions
   }
 
 }

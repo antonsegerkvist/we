@@ -32,14 +32,28 @@ class We_Accessors {
   }
 
   /**
-   * Get all forum post taxonomies.
+   * Get all forum categories.
    */
 
-  public static function endpoint_we_get_all_forum_taxonomies () {
+  public static function endpoint_we_get_all_forum_categories () {
+    header('Content-Type: application/json');
+    $terms = get_terms(array(
+     'hide_empty' => false,
+     'taxonomy' => 'we_forum_category'
+    ));
+    echo json_encode($terms);
+    wp_die();
+  }
+
+  /**
+   * Get all forum discussion.
+   */
+
+  public static function endpoint_we_get_all_forum_discussions () {
     header('Content-Type: application/json');
     $terms = get_terms(array(
       'hide_empty' => false,
-      'taxonomy' => 'we_forum'
+      'taxonomy' => 'we_forum_discussion'
     ));
     echo json_encode($terms);
     wp_die();
@@ -61,12 +75,25 @@ class We_Accessors {
     );
 
     /**
-     * Get all forum taxonomies.
+     * Get all forum categories.
      */
 
     add_action(
-      'wp_ajax_nopriv_endpoint_we_get_all_forum_taxonomies',
-      array('We_Accessors', 'endpoint_we_get_all_forum_taxonomies')
+      'wp_ajax_endpoint_we_get_all_forum_categories',
+      array('We_Accessors', 'endpoint_we_get_all_forum_categories')
+    );
+    add_action(
+      'wp_ajax_nopriv_endpoint_we_get_all_forum_categories',
+      array('We_Accessors', 'endpoint_we_get_all_forum_categories')
+    );
+
+    /**
+     * Get all forum discussions.
+     */
+
+    add_action(
+      'wp_ajax_nopriv_endpoint_we_get_all_forum_discussions',
+      array('We_Accessors', 'endpoint_we_get_all_forum_discussions')
     );
   }
 

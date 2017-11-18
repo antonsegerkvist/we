@@ -33,8 +33,7 @@
             label="NEW DISCUSSION"/>
 
           <!-- Category display. -->
-          <we-category-display-component
-            title="Categories"/>
+          <we-category-display-component/>
 
         </div>
 

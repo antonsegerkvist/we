@@ -1,6 +1,6 @@
 <template>
   <div class="we-category-display-component">
-    <h4>{{ title }}</h4>
+    <h4>Categories</h4>
     <ul>
       <li v-for="category in categories"><a href="javascript:void(0)">{{ category.name }}</a></li>
     </ul>
@@ -8,13 +8,25 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import {
+  mapActions,
+  mapGetters
+} from 'vuex'
 
 export default {
-  props: ['title'],
-  computed: mapGetters({
-    categories: 'getCategories'
-  })
+  created () {
+    this.updateCategories()
+  },
+  methods: {
+    ...mapActions({
+      updateCategories: 'updateCategories'
+    })
+  },
+  computed: {
+    ...mapGetters({
+      categories: 'getCategories'
+    })
+  }
 }
 </script>
 
