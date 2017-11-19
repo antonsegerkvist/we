@@ -36,6 +36,26 @@ class We_Accessors {
    */
 
   public static function endpoint_we_login_user () {
+    header('Content-Type: application/json');
+    $credentials = array(
+      'user_login' => $_POST['username_email'],
+      'user_password' => $_POST['password'],
+      'remember' => true
+    );
+    $user = wp_signon(
+      $credentials,
+      false
+    );
+    if (is_wp_error($user)) {
+      echo json_encode(array(
+        'success' => false,
+        'message' => $user->get_error_message()
+      ));
+    } else {
+      echo json_encode(array(
+        'success' => true
+      ));
+    }
     wp_die();
   }
 
@@ -44,6 +64,11 @@ class We_Accessors {
    */
 
   public static function endpoint_we_logout_user () {
+    header('Content-Type: application/json');
+    wp_logout();
+    echo json_encode(array(
+      'success' => true
+    ));
     wp_die();
   }
 
