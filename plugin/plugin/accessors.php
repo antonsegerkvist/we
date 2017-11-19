@@ -32,6 +32,22 @@ class We_Accessors {
   }
 
   /**
+   * Login user endpoint.
+   */
+
+  public static function endpoint_we_login_user () {
+    wp_die();
+  }
+
+  /**
+   * Logout user endpoint.
+   */
+
+  public static function endpoint_we_logout_user () {
+    wp_die();
+  }
+
+  /**
    * Get all forum categories.
    */
 
@@ -75,6 +91,24 @@ class We_Accessors {
     );
 
     /**
+     * User login endpoint.
+     */
+
+    add_action(
+      'wp_ajax_nopriv_endpoint_we_login_user',
+      array('We_Accessors', 'endpoint_we_login_user')
+    );
+
+    /**
+     * User logout endpoint.
+     */
+
+    add_action(
+      'wp_ajax_endpoint_we_logout_user',
+      array('We_Accessors', 'endpoint_we_logout_user')
+    );
+
+    /**
      * Get all forum categories.
      */
 
@@ -91,6 +125,10 @@ class We_Accessors {
      * Get all forum discussions.
      */
 
+    add_action(
+      'wp_ajax_endpoint_we_get_all_forum_discussions',
+      array('We_Accessors', 'endpoint_we_get_all_forum_discussions')
+    );
     add_action(
       'wp_ajax_nopriv_endpoint_we_get_all_forum_discussions',
       array('We_Accessors', 'endpoint_we_get_all_forum_discussions')
