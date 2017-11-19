@@ -1,5 +1,6 @@
 node_modules
 .password
+.DS_Store
 
 theme/assets/css/app.bundle.css
 theme/assets/js/app.bundle.js
